@@ -1,0 +1,93 @@
+.about-section {
+    background: #fff;
+    border-radius: 24px;
+    margin: 40px 0;
+    box-shadow: 0 4px 32px #764ba21a;
+}
+
+.section-title {
+    font-size: 3.2rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-align: center;
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    text-emphasis-color: transparent !important;
+}
+
+.about-intro {
+    font-size: 1.18rem;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 24px;
+    line-height: 1.7;
+}
+
+.about-invite {
+    font-weight: bold;
+    font-size: 1.1rem;
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-emphasis-color: transparent;
+}
+
+.highlight {
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-emphasis-color: transparent;
+    font-weight: bold;
+}
+
+.about-highlights {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.highlight-box {
+    background: linear-gradient(90deg, #667eea22 0%, #764ba222 100%);
+    border-radius: 18px;
+    padding: 18px 28px;
+    font-size: 1.08rem;
+    font-weight: 600;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 2px 12px #667eea11;
+    margin-bottom: 12px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.highlight-box:hover {
+    transform: translateY(-4px) scale(1.04);
+    box-shadow: 0 6px 24px #764ba244;
+}
+
+.highlight-emoji {
+    font-size: 1.5rem;
+}
+
+.about-fadein-left {
+    opacity: 0;
+    transform: translateX(-60px);
+    transition: opacity 0.8s cubic-bezier(.4, 0, .2, 1), transform 0.8s cubic-bezier(.4, 0, .2, 1);
+}
+
+.about-fadein-right {
+    opacity: 0;
+    transform: translateX(60px);
+    transition: opacity 0.8s cubic-bezier(.4, 0, .2, 1), transform 0.8s cubic-bezier(.4, 0, .2, 1);
+}
+
+.about-fadein.show {
+    opacity: 1;
+    transform: translateX(0);
+}

@@ -1,0 +1,186 @@
+.projects-section {
+    background: #fff;
+    border-radius: 24px;
+    margin: 40px 0;
+    box-shadow: 0 4px 32px #764ba21a;
+}
+
+.projects-swiper {
+    padding-bottom: 40px;
+}
+
+.project-card {
+    background: linear-gradient(90deg, #667eea11 0%, #764ba211 100%);
+    border-radius: 18px;
+    box-shadow: 0 2px 12px #667eea11;
+    padding: 32px 24px 24px 24px;
+    text-align: center;
+    /* max-width: 420px; */
+    margin: 0 auto;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.project-card:hover {
+    box-shadow: 0 8px 32px #764ba244;
+    transform: translateY(-6px) scale(1.03);
+}
+
+.project-img-main {
+    width: 100% !important;
+    max-width: 520px !important;
+    height: 280px !important;
+    object-fit: cover !important;
+    border-radius: 12px;
+    margin-bottom: 18px;
+    box-shadow: 0 2px 12px #667eea22;
+}
+
+.project-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-emphasis-color: transparent;
+}
+
+.project-desc {
+    font-size: 1.05rem;
+    color: #333;
+    margin-bottom: 18px;
+}
+
+.project-links {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+}
+
+.btn-github,
+.btn-view {
+    padding: 8px 22px;
+    border-radius: 24px;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px #667eea22;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-github {
+    background: #333;
+    color: #fff;
+}
+
+.btn-github:hover {
+    background: #764ba2;
+    color: #fff;
+}
+
+.btn-view {
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+}
+
+.btn-view:hover {
+    background: linear-gradient(90deg, #764ba2 0%, #667eea 100%);
+    color: #fff;
+}
+
+.project-row {
+    background: linear-gradient(90deg, #f8f8ff 0%, #f3f0fa 100%);
+    border-radius: 24px;
+    box-shadow: 0 4px 32px #764ba21a;
+    padding: 36px 18px;
+    margin: 0 auto 40px auto;
+    /* max-width: 900px; */
+}
+
+.project-img-main {
+    width: 100%;
+    max-width: 370px;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px #667eea22;
+    background: #fff;
+}
+
+.project-subtitle {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-emphasis-color: transparent;
+}
+
+.project-desc-main {
+    font-size: 1.08rem;
+    color: #333;
+    margin-bottom: 18px;
+    font-weight: 500;
+}
+
+.btn-theme {
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+    color: white !important;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px !important;
+    padding: 10px 28px !important;
+    box-shadow: 0 2px 8px rgba(102, 126, 234, 0.15);
+    transition: transform 0.25s, box-shadow 0.25s;
+    letter-spacing: 1px;
+    font-size: 1.05rem;
+    position: relative;
+    overflow: hidden;
+}
+.btn-theme::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    transition: left 0.5s;
+    z-index: 1;
+}
+
+.btn-theme:hover::before,
+.btn-theme:focus::before {
+    left: 100%;
+    transition: left 0.5s;
+}
+
+.btn-theme span {
+    position: relative;
+    z-index: 2;
+}
+
+.btn-theme:hover,
+.btn-theme:focus {
+    transform: scale(1.07);
+    outline: none;
+    color: #fff;
+    text-decoration: none;
+}
+
+@media (max-width: 767px) {
+    .project-row {
+        flex-direction: column !important;
+        padding: 24px 6px;
+    }
+
+    .project-img-main {
+        max-width: 100%;
+        height: 180px;
+    }
+}

@@ -1,0 +1,129 @@
+.navbar-gradient {
+    background: white !important;
+    /* Soft peach-pink gradient */
+    border-radius: 0 0 18px 18px;
+    box-shadow: 0 4px 24px 0 rgba(252, 182, 159, 0.15);
+    backdrop-filter: blur(6px);
+}
+
+.nav-gap {
+    gap: 32px;
+    display: flex;
+    align-items: center;
+}
+
+.gradient-text {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-emphasis-color: transparent;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.logo-spin {
+    animation: spin 2.5s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.nav-underline {
+    position: relative;
+    transition: color 0.2s;
+}
+
+.nav-underline::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    transition: width 0.3s;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+}
+
+.nav-underline:hover::after,
+.nav-link.active.nav-underline::after {
+    width: 100%;
+}
+
+.nav-link {
+    font-size: 1.1rem;
+    font-weight: 500 !important;
+    letter-spacing: 1px;
+}
+
+.btn-cv {
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+    color: white !important;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px !important;
+    padding: 10px 28px !important;
+    box-shadow: 0 2px 8px rgba(102, 126, 234, 0.15);
+    transition: transform 0.25s, box-shadow 0.25s;
+    letter-spacing: 1px;
+    font-size: 1.05rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-cv::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: left 0.5s;
+    z-index: 1;
+}
+
+.btn-cv:hover::before,
+.btn-cv:focus::before {
+    left: 100%;
+    transition: left 0.5s;
+}
+
+.btn-cv span {
+    position: relative;
+    z-index: 2;
+}
+
+.btn-cv:hover,
+.btn-cv:focus {
+    transform: scale(1.07);
+    outline: none;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar-custom {
+    position: sticky !important;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-link.active.nav-underline {
+    /* color: #ffd700 !important; */
+    font-weight: bold;
+    /* border-bottom: 2.5px solid #ffd700; */
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s cubic-bezier(.4, 0, .2, 1);
+    /* box-shadow: 0 2px 12px #764ba244; */
+}
