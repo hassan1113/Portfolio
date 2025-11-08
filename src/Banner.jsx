@@ -1,6 +1,7 @@
 import React from 'react';
 import './Banner.css';
 import developer from './assets/developer.png';
+import resumePDF from './assets/resume.pdf';
 
 const Banner = () => {
     return (
@@ -23,7 +24,7 @@ const Banner = () => {
                         <p className="lead mb-4 animate-fadein tagline">
                             <strong>Building Modern & Creative Web Experiences</strong>
                         </p>
-                        <a href="/resume.pdf" className="btn btn-hireme btn-lg" download><span>Hire Me</span></a>
+                        <a href={resumePDF} className="btn btn-hireme btn-lg" download><span>Hire Me</span></a>
                     </div>
                     {/* Right Side */}
                     <div className="col-md-6 justify-content-center d-flex align-items-center">

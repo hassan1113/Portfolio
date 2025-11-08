@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Header.css";
 import logo from "./assets/logo.png";
+import resumePDF from "./assets/resume.pdf";
 
 const navLinks = [
     { id: "home", label: "Home" },
@@ -62,7 +63,7 @@ function Header() {
                             </li>
                         ))}
                         <li className="nav-item">
-                            <a className="btn btn-cv ms-3" href="/resume.pdf" download>
+                            <a className="btn btn-cv ms-3" href={resumePDF} download>
                                 <span>Download CV</span>
                             </a>
                         </li>

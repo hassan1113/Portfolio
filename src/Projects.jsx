@@ -8,34 +8,38 @@ import "swiper/css/pagination";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faEye } from "@fortawesome/free-solid-svg-icons";
+import img1 from "./assets/1.png";
+import img2 from "./assets/2.png";
+import img3 from "./assets/3.png";
+import img4 from "./assets/4.png";
 
 // Example projects data
 const projects = [
     {
         subtitle: "Frontend Project",
         desc: "This is Daniel Mariney's landing page, built using HTML5, CSS3, and JavaScript. It is fully responsive, ensuring an optimal viewing experience on any device.",
-        image: "/src/assets/1.png",
+        image: img1,
         github: "https://github.com/hassan1113/Daniel-Mariney",
         demo: "https://hassan1113.github.io/Daniel-Mariney/"
     },
     {
         subtitle: "Frontend Project",
         desc: "This is Fast Food landing page, built using HTML5, CSS3, and JavaScript. It is fully responsive, ensuring an optimal viewing experience on any device.",
-        image: "/src/assets/2.png",
+        image: img2,
         github: "https://github.com/hassan1113/Fast-Food",
         demo: "https://hassan1113.github.io/Fast-Food/"
     },
     {
         subtitle: "Frontend Project",
         desc: "This is Future Of Education landing page, built using HTML5, CSS3, and JavaScript. It is fully responsive, ensuring an optimal viewing experience on any device.",
-        image: "/src/assets/3.png",
+        image: img3,
         github: "https://github.com/hassan1113/FOE",
         demo: "https://hassan1113.github.io/FOE/"
     },
     {
         subtitle: "Frontend Project",
         desc: "This is Marinade Bold Burger landing page, built using HTML5, CSS3, and JavaScript. It is fully responsive, ensuring an optimal viewing experience on any device.",
-        image: "/src/assets/4.png",
+        image: img4,
         github: "https://github.com/hassan1113/Marinade_Bold_Burger",
         demo: "https://hassan1113.github.io/Marinade_Bold_Burger/"
     }
